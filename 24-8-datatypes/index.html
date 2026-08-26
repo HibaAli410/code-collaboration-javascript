@@ -5,6 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datatypes</title>
+    <style>
+        table {
+            width: 80%;
+            height: auto;
+            background-color: azure;
+            color: cadetblue;
+            border: 2px solid rgb(11, 50, 52);
+            margin: 0px auto;
+        }
+
+        tr {
+            background-color: black;
+            color: azure;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,6 +27,24 @@
     <p id="result"></p>
     <p id="result2"></p>
     <p id="result3"></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>CNIC</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="one"></td>
+                <td id="two"></td>
+                <td id="three"></td>
+                <td id="four"></td>
+            </tr>
+        </tbody>
+    </table>
     <script>
 
         // console.log(typeof ("hiba ali"));   //string
@@ -43,10 +76,23 @@
         console.log("data type of last name is : " + typeof (Last_name));
         console.log("type of married" + typeof (married));
 
-        document.getElementById('result').innerHTML = first_name;
+        document.getElementById('result').innerHTML = first_name + last_name;
         document.getElementById('result2').innerHTML = last_name;
         document.getElementById('result3').innerHTML = married;
 
+        let roll = 90;
+        let name = "Jameel";
+        let last_ = "Ahmed";
+        let cnic = "234590-49834-494";
+
+        let hello = document.getElementById('one');
+        hello.innerHTML = cnic;
+        document.getElementById('two').innerHTML = name;
+        document.getElementById('three').innerHTML = last_;
+        document.getElementById('four').innerHTML = cnic;
+
+
+        console.log(hello);
 
 
     </script>
