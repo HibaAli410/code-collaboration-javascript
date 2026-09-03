@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison operator</title>
+</head>
+
+<body>
+    <h1>Comparison operator</h1>
+    <span id="demo"></span>
+    <script>
+
+        let value_1 = 20;
+        let value_2 = 50;
+
+        // let value_result = value_1 < value_2;
+        // document.getElementById("demo").innerHTML = "value_1 is less than value_2: " + value_result;
+        // let value_result = value_1 > value_2;
+        // document.getElementById("demo").innerHTML = "value_1 is greater than value_2: " + value_result;
+        // let value_result = value_1 == value_2;
+        // document.getElementById("demo").innerHTML = "value_1 is equal to value_2: " + value_result;
+        // let value_result = value_1 === value_2;
+        // document.getElementById("demo").innerHTML = "value_1 is strictly equal to value_2: " + value_result;
+
+        // let value_result = value_1 != value_2;
+        // document.getElementById("demo").innerHTML = "value_1 is not equal to value_2: " + value_result;
+        // let value_result = value_1 !== value_2;
+        // document.getElementById("demo").innerHTML = "value_1 is not strictly equal to value_2: " + value_result;
+
+        // let value_result = value_1 >= value_2;
+        // document.getElementById("demo").innerHTML = "value_1 is greater than or equal to value_2: " + value_result;
+
+        // if (condition) {
+        //     //statement
+        // }
+        if (value_1 < value_2) {
+            document.getElementById("demo").innerHTML = "this is true";
+        }
+        else {
+            document.getElementById("demo").innerHTML = "this is false";
+        }
+        let age = 17;
+        let country = "Pakistan";
+        let state = "Karachi";
+        //Nested if statement
+
+        if (age < 18) {
+            console.log("you are elegible for addmision");
+            if (country == "Pakistan") {
+                console.log("you are from Pakistan national university");
+                if (state == "Karachi") {
+                    console.log("you are from Karachi state");
+                }
+            }
+
+        }
+
+        // && operator
+        if (age < 18 && country == "Pakistan" && state == "Karachi") {
+            console.log("you are elegible for addmision");
+        }
+        else {
+            console.log("you are not elegible for addmision");
+        }
+
+        let username = "Parveen";
+        let password = "12345";
+        if (username == "Parveen" && password == "12345") {
+            console.log("you are login successfully");
+        }
+        else {
+            console.log("username or password is incorrect");
+        }
+
+        let section_A = 4; let user_atttempt_question = 3;
+        let section_B = 4; let user_atttempt_question_b = 5;
+        let section_C = 5; let user_atttempt_question_c = 6;
+        section_A >= user_atttempt_question;  // false
+
+
+        let oldman = 60;
+        if (60 !== 60) {
+            console.log("you are old man");
+        }
+
+
+    </script>
+</body>
+
+</html>
