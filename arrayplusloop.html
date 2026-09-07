@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop with array</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        // let i = 9;
+        // array
+        // primitiv data type 
+        // let name = "Munnaza";
+        //  name = 25;
+
+        // Non primitive data type
+        // let name = ["Ali", 56, "Sara", true];
+        //0-3
+        let names = ["Ali", "Ahmed", "Sara", "John"];
+        for (let i = 0; i < names.length; i++) {
+            console.log(names[i]);
+            document.getElementById("demo").innerHTML += names[i] + "<br>";
+        }
+
+        let first_name = "Munnaza Shah";
+
+        // document.getElementById("demo").innerHTML = first_name.length;
+        for (let i = 0; i < first_name.length; i++) {
+            console.log(first_name[i]);
+            document.getElementById("demo").innerHTML += first_name[i] + "<br>";
+        }
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+            document.getElementById("demo").innerHTML += i + "<br>";
+        }
+
+    </script>
+</body>
+
+</html>
