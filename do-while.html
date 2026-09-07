@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-While Loop</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td id="student1"></td>
+            <td id="age1"></td>
+        </tr>
+        <tr>
+            <td id="student2"></td>
+            <td id="age2"></td>
+        </tr>
+        <tr>
+            <td id="student3"></td>
+            <td id="age3"></td>
+        </tr>
+        <tr>
+            <td id="student4"></td>
+            <td id="age4"></td>
+        </tr>
+    </table>
+
+
+    <script>
+        const students = ["Ali", "Ahmed", "Sara", "John"];
+        const ages = [20, 22, 21, 23];
+        // console.log(students.length);
+        // console.log(students[3]);
+        let number = students.length;
+        let loop = 1;
+        // console.log("student" + loop);
+        // loop++;
+        // console.log("student" + loop);
+        do {
+            document.getElementById("student" + loop).innerHTML = students[loop - 1];
+            document.getElementById("age" + loop).innerHTML = ages[loop - 1];
+            loop++;
+
+        }
+        while (loop <= number)
+
+    </script>
+</body>
+
+</html>
