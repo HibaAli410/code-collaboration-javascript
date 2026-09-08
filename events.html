@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+
+    <input type="text" placeholder="Click here to focus" onkeydown="demo(event)">
+    <input type="text" placeholder="Click here to focus" onkeyup="demo(event)">
+    <button onclick="myFunction()">Click me</button>
+    <script>
+        // function myFunction() {
+        //     alert("Hello! I am an alert box!");
+        // }
+
+        function demo(hello) {
+            console.log(hello);
+            console.log(hello.keyCode);
+            console.log(hello.code);
+            let minekey = hello.key;
+            if (minekey == "Enter") {
+                alert("You have pressed Enter key");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+
+</html>
