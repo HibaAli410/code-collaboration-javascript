@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <input type="text" id="firstvalue" placeholder="Enter first value">
+    <input type="text" id="secondvalue" placeholder="Enter second value">
+    <button onclick="add()">Add</button>
+    <p id="demo"></p>
+    <p id="demomulti"></p>
+
+    <script>
+        function add() {
+            let value1 = document.getElementById("firstvalue").value;
+            let value2 = document.getElementById("secondvalue").value;
+            let valueinintegerone = Number(value1);
+            let valueinintegertwo = Number(value2);
+
+            let total = valueinintegerone + valueinintegertwo;
+            document.getElementById("demo").innerHTML = "The sum of " + valueinintegerone + "and " + valueinintegertwo + "is" + total;
+            //console.log(valueininteger);
+            //console.log(Number.isInteger(valueininteger));
+            //console.log(Number.isInteger(value1));
+            //console.log(typeof (value1));
+            return total;
+        }
+        let result = add();
+        console.log(typeof (result));
+        let multiply = result * 2;
+        console.log(typeof (multiply));
+        document.getElementById("demomulti").innerHTML = multiply;
+    </script>
+</body>
+
+</html>

@@ -12,6 +12,8 @@
     <input type="text" placeholder="Click here to focus" onkeydown="demo(event)">
     <input type="text" placeholder="Click here to focus" onkeyup="demo(event)">
     <button onclick="myFunction()">Click me</button>
+    <input type="text" placeholder="press A" onkeydown="letterkey(event)">
+    <p id="demo_"></p>
     <script>
         // function myFunction() {
         //     alert("Hello! I am an alert box!");
@@ -26,6 +28,19 @@
                 alert("You have pressed Enter key");
             }
 
+        }
+        function letterkey(hii) {
+            console.log(hii.key);
+            let mykey = hii.key;
+            if (mykey === "a" || mykey === "A") {
+                alert("You pressed the 'A' key!");
+                let text = "You pressed the 'A' key!";
+                document.getElementById("demo_").innerHTML = text;
+            }
+            else {
+                document.getElementById("demo_").innerHTML = "hello";
+
+            }
         }
 
     </script>

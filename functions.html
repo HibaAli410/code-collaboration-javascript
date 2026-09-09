@@ -21,7 +21,7 @@
     <pre>
         const variablename = ()=>{  // define any thing }
     </pre>
-
+    <p id="demo"></p>
 
     <script>
         function plus() {
@@ -44,12 +44,24 @@
             firstvalue = 34;
             secondvalue = 67;
             total = firstvalue + secondvalue;
+            return total;
         }
+        function sayHello() {
+            return "Hello World";
+        }
+        sayHello();
+        let result = sayHello();
 
+        document.getElementById("demo").innerHTML = result;
         plus();
         plus();
         plus();
 
+        function greet(name) {
+            return "Hello " + name;
+        }
+        let variable = greet("Munnaza");
+        console.log(variable);
     </script>
 </body>
 
