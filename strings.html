@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        let heading = "Menu";
+        let dishes = ["karhai", "Nihari", "Biryani"]
+
+        // for (let i = 0; i <= dishes.length; i++) {
+        //     console.log(dishes[i]);
+        //     document.getElementById("demo").innerHTML += dishes[i];
+        // }
+        for (const x of dishes) {
+            console.log(x);
+            document.getElementById("demo2").innerHTML += x;
+        }
+        // let html = "<h1>" + heading + "</h1>";
+        let html = `<h1>${heading}</h1><ul>`;
+        for (const list of dishes) {
+            html += `<li>${list}</li>`;
+        }
+        html += `</ul>`;
+        document.getElementById("demo").innerHTML = html;
+
+
+
+    </script>
+</body>
+
+</html>
