@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break statement</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        let text = "";
+        let jtext = "";
+        for (let j = 1; j < 5; j++) {
+            for (let i = 1; i < 5; i++) {
+                if (i === 3) { break; }
+                text += i;
+                document.getElementById("demo").innerHTML += text + "<br>";
+            }
+            jtext = j
+            document.getElementById("demo2").innerHTML = "This is  loop" + jtext;
+        }
+
+        // loop1: for (let j = 1; j < 5; j++) {
+        //     loop2: for (let i = 1; i < 5; i++) {
+        //         if (i === 3) { break loop2; }
+        //         text += i + "<br>";
+        //         console.log(text)
+        //     }
+        // }
+
+        let theme = ["Blue", "Orange", "Voilet", "White", "Black"];
+        console.log(theme.length);
+        for (const color of theme) {
+            if (color === "Voilet") { break; }
+            console.log(color);
+        }
+        for (const color of theme) {
+            if (color === "Voilet") { continue; }
+            console.log(color);
+        }
+        let breakfast = ["Coffee", "Tea", "Cakes"]
+        let lunch = ["Biryani", "Karhai"];
+        let dinner = ["Soup", "Pasta", "Pizza"]
+        for (const food of breakfast) {
+            console.log(food);
+            for (const lunchfood of lunch) {
+                console.log(lunchfood);
+                for (dinnerfood of dinner) {
+                    console.log(dinnerfood);
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
