@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Conditions</title>
+</head>
+
+<body>
+    <input type="text" name="valueone" id="valueone" value="" placeholder="Here is value">
+    <input type="text" name="valuetwo" id="valuetwo" value="" placeholder="Here is value">
+    <button type="button" onclick="plus()">+</button>
+    <button type="button" onclick="multi()">*</button>
+    <p id="demo"></p>
+
+</body>
+<script>
+
+    function bringmevalues() {
+        let valueone = Number(document.getElementById("valueone").value);
+        let valuetwo = Number(document.getElementById("valuetwo").value);
+        return [valueone, valuetwo];
+    }
+    function plus() {
+        let bbb = bringmevalues();
+        console.log(bbb[0], bbb[1]);
+        let total = bbb[0] + bbb[1]
+        console.log(total)
+        document.getElementById("demo").innerHTML = total;
+    }
+    // function plus() {
+    //     let valueone = Number(document.getElementById("valueone").value);
+    //     let valuetwo = Number(document.getElementById("valuetwo").value);
+    //     let total = valueone + valuetwo
+    //     console.log(total)
+    //     document.getElementById("demo").innerHTML = total;
+    // }
+    // function multi() {
+    //     let valueone = Number(document.getElementById("valueone").value);
+    //     let valuetwo = Number(document.getElementById("valuetwo").value);
+    //     let total = valueone * valuetwo
+    //     console.log(total)
+    //     document.getElementById("demo").innerHTML = total;
+    // }
+
+
+
+</script>
+
+</html>
