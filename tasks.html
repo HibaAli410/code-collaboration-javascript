@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAsks</title>
+</head>
+
+<body>
+    <p>1 2 -2 3 4 -3 -8 5 6 7 8 9 0</p>
+    <p id="checkingnumber"></p>
+    <h1 id="even"></h1>
+
+    <script>
+        let numbers = [1, 2, -2, 3, 4, -3, -8, 5, 6, 7, 8, 9, 0];
+        for (const number of numbers) {
+            if (number > 0) {
+                console.log("this is positive number" + number);
+                document.getElementById("checkingnumber").innerHTML += "this is positive number" + number + "<br>"
+            }
+            else if (number < 0) {
+                console.log("this is negetive number" + number);
+                // document.getElementById("checkingnumber").innerHTML += number
+                document.getElementById("checkingnumber").innerHTML += "this is negative number" + number + "<br>"
+            }
+            else {
+                console.log("this is 0 number" + number);
+                // document.getElementById("checkingnumber").innerHTML += number
+                document.getElementById("checkingnumber").innerHTML += "this is number" + number + "<br>"
+            }
+        }
+
+        // let reminder = 24 % 2
+        // console.log(reminder);
+        let evennumber = [23, 46, 78, 90, 11]
+        for (const even of evennumber) {
+            let reminder = even % 2
+            if (reminder === 0) {
+                document.getElementById("even").innerHTML += even + "this is even";
+            }
+        }
+    </script>
+</body>
+
+</html>
