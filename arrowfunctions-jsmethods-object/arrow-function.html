@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+
+<body>
+
+    <script>
+        //        Arrow Functions allow a shorter syntax for function expressions.
+
+        // You can skip the function keyword, the return keyword, and the curly brackets:
+        const variable = (a, b) => a * b;
+        const result = variable(8, 9);
+        console.log("hello this is the multiplication " + result)
+        console.log(`hello this is the multiplication${result}`)
+
+        // ??const student = ["Javaria", "Hina", "Uzma", "Raheel"]
+
+        const days = ["monday", "tuesday", "wed", "thurs", "Fri", "Sat"];
+        for (day of days) {
+            console.log(day);
+        }
+        // create new array dont effect on origion array map()
+        const leng = days.map((day) => day.length);
+        console.log(leng);
+
+        const ages = [70, 40, 17, 30, 40, 50, 20];
+        const underthirty = ages.map((thirty) => { thirty <= 30 })
+        console.log(underthirty)
+        // Return only first element if test is pass. find()
+        // const findages = [3, 10, 18, 20, 60, 12, 21];
+
+        // console.log(findages.find((under) => under < 30))
+        // create new array dont effect on origion array filter()
+        const findages = [3, 10, 89, 18, 20, 40, 60, 12, 21];
+
+        const number_age = findages.filter((under30) => under30 > 30)
+        console.log(number_age);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
