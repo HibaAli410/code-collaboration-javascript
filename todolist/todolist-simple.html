@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+</head>
+
+<body>
+    <input type="text" id="todotext" name="todotext" placeholder="Add an item">
+    <br />
+    <button id="done" type="click"> add me</button>
+    <p id="demo"></p>
+
+    <script>
+        let btn = document.getElementById("done")
+        btn.addEventListener('click', doit)
+        let display = document.getElementById("demo")
+        let ul = document.createElement('ul')
+        function doit() {
+            let addtask = document.getElementById("todotext")
+            let valueofinput = addtask.value
+            let input = document.createElement('input')
+            input.type = "checkbox"
+            let li = document.createElement('li')
+            li.appendChild(input);
+            li.appendChild(document.createTextNode(" " + valueofinput));
+            ul.appendChild(li)
+            addtask.value = " "
+
+        }
+        demo.appendChild(ul)
+        document.body.appendChild(demo)
+
+        // let addtask = document.getElementById("todotext")
+        // let display = document.getElementById("demo")
+        // addtask.addEventListener("onkeydown", add) // addeventlistener(event,function)
+        // function add(event) {
+        //     console.log(event);
+        //     if (event.keyCode === 13) {
+        //         display.innerHTML = "hello"
+        //     }
+        // }
+    </script>
+</body>
+
+</html>
