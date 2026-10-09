@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="text" id="todotext" name="todotext" onkeyup="addTodo(event)" placeholder="Add an item">
+
+
+    <script>
+        function addTodo(event) {
+
+            let todotext = document.getElementById("todotext");
+            if ((event.keyCode === 13) && (todotext.value.trim() !== "")) {
+                storeitems = JSON.parse(localStorage.getItem('todoItems')) || []
+                const objaary =
+                {
+                    id: Date.now(),
+                    text: todotext.value,
+                    status: false,
+                }
+
+                storeitems.push(objaary);
+                localStorage.setItem('todoItems', JSON.stringify(storeitems));
+                renderTodoList();
+            }
+        }
+    </script>
+    <script src="todo.js">
+
+    </script>
+</body>
+
+</html>
+// store[0] ,
