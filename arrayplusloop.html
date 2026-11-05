@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <h1>Loop with array</h1>
+    <p id="demoone"></p>
     <p id="demo"></p>
     <script>
         // let i = 9;
@@ -19,24 +21,104 @@
         // Non primitive data type
         // let name = ["Ali", 56, "Sara", true];
         //0-3
-        let names = ["Ali", "Ahmed", "Sara", "John"];
-        for (let i = 0; i < names.length; i++) {
-            console.log(names[i]);
-            document.getElementById("demo").innerHTML += names[i] + "<br>";
-        }
+        // let names = ["Ali", "Ahmed", "Sara", "John"];
+        // for (let i = 0; i < names.length; i++) {
+        //     console.log(names[i]);
+        //     document.getElementById("demo").innerHTML += names[i] + "<br>";
+        // }
 
-        let first_name = "Munnaza Shah";
+        // let first_name = "Munnaza Shah";
 
-        // document.getElementById("demo").innerHTML = first_name.length;
-        for (let i = 0; i < first_name.length; i++) {
-            console.log(first_name[i]);
-            document.getElementById("demo").innerHTML += first_name[i] + "<br>";
-        }
-        for (let i = 0; i < 10; i++) {
-            console.log(i);
-            document.getElementById("demo").innerHTML += i + "<br>";
-        }
+        // // document.getElementById("demo").innerHTML = first_name.length;
+        // for (let i = 0; i < first_name.length; i++) {
+        //     console.log(first_name[i]);
+        //     document.getElementById("demo").innerHTML += first_name[i] + "<br>";
+        // }
+        // for (let i = 0; i < 10; i++) {
+        //     console.log(i);
+        //     document.getElementById("demo").innerHTML += i + "<br>";
+        // }     //index          //0.    //1        //2        //3       //4       //5   
+        //const fruits = ["banana", "apples", "grapes", "pineapple", "mango", 1234]
+        //length         1       2       3           4               5       6
+        //    q = 4
+        //     fruits[2] = "strawberry"
+        //     length =fruits[2]
+        //     console.log(length);
 
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // // console.log("legnth of my array " + fruits.length); // 4
+        // console.log(fruits)
+        // fruits.shift(); // remove first element
+        // console.log(fruits)
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // console.log(fruits)
+        // fruits.pop(); // remove last element
+        // console.log(fruits)
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // console.log(fruits)
+        // fruits.unshift("Lemon"); // add first element
+        // console.log(fruits)
+
+        // const fruits = ["hania", "afzal", true, 34];
+        // console.log(fruits)
+        // fruits[2] = false;
+        // console.log(fruits);
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango", "pear", "pineapple"];
+        // //fruits[fruits.length] = "Kiwi";  fruits[4] = "Kiwi";  // add last element  
+        // console.log(fruits)
+        // fruits[fruits.length] = "Kiwi";
+        // console.log(fruits)
+
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // console.log(fruits)
+        // // delete fruits[0];
+        // // fruits.shift();
+        // console.log(fruits[0])
+        // console.log(fruits[1])
+        // console.log(fruits[2])
+        // console.log(fruits[3])
+
+
+        //const fruits = ["Banana", "Orange", "Apple", "Mango", "pear", "pineapple", "kiwi", "grapes", "strawberry"];
+        // console.log(fruits)
+        // fruits.copyWithin(2, 0);
+        // console.log(fruits)
+        //quantity  , //start index,  //end index
+
+        // const na_mes = ["Ali", "Ahmed", "Sara", "John", "Apple", "Mango", "pear"];
+        // console.log(na_mes)
+        // na_mes.copyWithin(4, 0)
+        // console.log(na_mes)
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // console.log(fruits)
+        // fruits.splice(1, 0, "Lemon", "Kiwi");
+        // console.log(fruits)
+        // const fruits = ["go to shopping", "wateringplants", "check copies", "cleaning", "cooking", "laundry"];
+        // console.log(fruits)
+        // let id = 3;
+        // // fruits.splice(id, 1);
+        // //console.log(fruits)
+        // console.log(fruits[id])
+        // console.log(fruits)
+
+        const months = ["Jan", "Feb", "Mar", "Apr", "may", "june", "july"];
+        console.log(months)
+        const spliced = months.toSpliced(2, 3);
+        console.log(months)
+        console.log(months[0]);
+        console.log(months[1]);
+        console.log(months[2]);
+        console.log(spliced)
+        document.getElementById("demoone").innerHTML = months;
+        document.getElementById("demo").innerHTML = spliced;
+        console.log(spliced[0]);
+        console.log(spliced[1]);
+        console.log(spliced[2]);
     </script>
 </body>
 

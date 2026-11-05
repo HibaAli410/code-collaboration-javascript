@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects</title>
+</head>
+
+<body id="container">
+
+
+    <script>
+
+        //let student = ["one","two","three"]
+        const students = [
+            {
+                "name": "Zumail",
+                "fathername": "Maslam",
+                "subject": "economics"
+            },
+            {
+                "name": "Rubaisha",
+                "fathername": "Tofeeq",
+                "subject": "Mathematics"
+            },
+            {
+                "name": "Tanveer",
+                "fathername": "Ilyas",
+                "subject": "English"
+            },
+
+        ]
+        // console.log(students[0].name);
+        // console.log(students[1].name);
+        // console.log(students[2].name);
+        //student[0][1][2]
+        // for (title of students) {
+        //     title
+        // }
+        // students.forEach(
+        //     title => { console.log(title.name) }
+        // )
+        const table = document.createElement("table")
+        students.forEach(title => {
+            const tr = document.createElement("tr")
+            const td1 = document.createElement("td")
+            const td2 = document.createElement("td")
+            const td3 = document.createElement("td")
+        })
+        document.body.appendChild(table)
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="todotext" name="todotext" onkeyup="addTodo(event)" placeholder="Add an item">
+
+
+    <script>
+        let ul = document.createElement('ul')
+        document.body.appendChild(ul)
+        let storedata = ["grocery"]
+        localStorage.setItem("todolist", JSON.stringify(storedata))
+        function addTodo(event) {
+            if (event.keyCode === 13) {
+                let addtask = document.getElementById("todotext")  //any task
+                let valueofinput = addtask.value  //value of the task
+
+                let input = document.createElement('input')
+                input.type = "checkbox"
+                let li = document.createElement('li')
+                li.appendChild(input);
+                li.appendChild(document.createTextNode(" " + valueofinput));
+                let editbtn = document.createElement('button')
+                editbtn.innerHTML = "Edit"
+                // what edit function do
+                editbtn.addEventListener('click', function () { })
+
+
+                let deletebtn = document.createElement('button')
+                deletebtn.innerHTML = "Delete"
+
+                // What delete function do
+                deletebtn.addEventListener('click', function () {
+                    li.remove()
+                })
+
+
+                li.appendChild(editbtn)
+                li.appendChild(deletebtn)
+                ul.appendChild(li)
+                addtask.value = " "
+            }
+
+        }
+    </script>
+</body>
+
+</html>

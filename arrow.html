@@ -24,6 +24,32 @@
 
         greet();
 
+        let array = [1, 2, 3, 4, 5, "munnaza", "ali", "ahmed"];
+        let obj = [{ id: 1, text: "munnaza" }, { id: 2, text: "ali" }, { id: 3, text: "ahmed" }];
+
+        let storage_ = JSON.parse(localStorage.getItem("data")) || [];
+        storage_.forEach((element) => {
+            let input = "munnaza";
+            if (element.text.includes(input)) {
+                console.log("yes");
+            }
+            else {
+                storage_.push(element)
+                localStorage.setItem("data", JSON.stringify(storage_))
+
+            }
+        })
+        // one
+        // array.forEach((num) => console.log(num));
+        // //Two
+        // array.forEach((num) => {
+        //     let h1 = document.createElement("h1");
+        //     h1.textContent = num;
+        //     document.body.appendChild(h1);
+        // }
+        // )
+
+        // let num =   array[3];
     </script>
 
 </body>
