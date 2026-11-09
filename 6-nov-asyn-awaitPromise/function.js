@@ -24,7 +24,6 @@ async function fetchData () {
   let jsonfile = await variable.json()
   return jsonfile
 }
-fetchData()
 function displayjsondata (data) {
   let table = document.createElement('table')
   let thead = document.createElement('thead')
@@ -40,13 +39,19 @@ function displayjsondata (data) {
   data.forEach(element => {
     let trbody = document.createElement('tr')
     let td = document.createElement('td')
-    td.innerHTML = element.email
+    let td1 = document.createElement('td')
+    td.innerHTML = element.age
+    td1.innerHTML = element.city
+    trbody.appendChild(td1)
     trbody.appendChild(td)
     tbody.appendChild(trbody)
   })
   table.appendChild(tbody)
   document.getElementById('display').appendChild(table)
 }
+fetchData().then(data => {
+  displayjsondata(data)
+})
 
 // let fetchurl = fetch('https://jsonplaceholder.typicode.com/comments')
 // fetchurl
