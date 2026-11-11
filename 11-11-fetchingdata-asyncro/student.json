@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Hiba Ali",
+        "age": 22,
+        "city": "Karachi"
+    },
+    {
+        "name": "Ali Khan",
+        "age": 25,
+        "city": "Lahore"
+    },
+    {
+        "name": "Sara Ahmed",
+        "age": 23,
+        "city": "Islamabad"
+    },
+    {
+        "name": "Ahmed Raza",
+        "age": 24,
+        "city": "Peshawar"
+    }
+
+]
