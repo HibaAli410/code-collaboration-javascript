@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swappy</title>
+    <script src="https://unpkg.com/swapy/dist/swapy.min.js"></script>
+    <style>
+        li {
+            width: 100%;
+            height: 150px;
+            background-color: bisque;
+
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        div {
+            width: 70%;
+            height: 70px;
+            background-color: rgb(241, 118, 118);
+            border: 2px solid orange;
+        }
+
+        .biggboss {
+            width: 100%;
+            height: auto;
+            background-color: chocolate;
+        }
+
+        #divone {
+            background-color: beige;
+        }
+
+        #divtwo {
+            background-color: chocolate;
+        }
+
+        #divthree {
+            background-color: cornflowerblue;
+        }
+
+        #divfour {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="biggboss">
+
+        <li data-swapy-slot="A">
+            <div id="divone" data-swapy-item="a"></div>
+        </li>
+        <li data-swapy-slot="B">
+            <div id="divtwo" data-swapy-item="b"></div>
+        </li>
+        <li data-swapy-slot="C">
+            <div id="divthree" data-swapy-item="c"></div>
+        </li>
+        <li data-swapy-slot="D">
+            <div id="divfour" data-swapy-item="d"></div>
+        </li>
+    </div>
+
+    <script>
+        // You can then use it like this
+        const swapy = Swapy.createSwapy('.biggboss')
+    </script>
+</body>
+
+</html>

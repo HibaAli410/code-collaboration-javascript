@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapy</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div data-swapy-slot="A" draggable="true">
+            <div data-swapy-item="a">A</div>
+        </div>
+
+        <div data-swapy-slot="B" draggable="true">
+            <div data-swapy-item="b">B</div>
+        </div>
+
+        <div data-swapy-slot="C" draggable="true">
+            <div data-swapy-item="c">C</div>
+        </div>
+
+        <div data-swapy-slot="D" draggable="true">
+            <div data-swapy-item="d">D</div>
+        </div>
+    </div>
+
+
+    <script>
+        import { createSwapy } from 'swapy'
+
+        const container = document.querySelector('.container')
+        const swapy = createSwapy(container, {
+            animation: 'dynamic',
+            swapMode: 'drop',
+        })
+    </script>
+
+</body>
+
+</html>
